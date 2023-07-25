@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fractals"
+version = "0.1.0"
+description = ""
+authors = ["Mikael Karppinen <mikael.karppinen@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+mypy = "^1.0.0"
+flake8 = "^6.0.0"
+tox = "^4.4.7"
+pytest-cov = "^4.0.0"
+pre-commit = "^3.2.0"
+pylint = "^2.17.4"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry_bumpversion.file."src/fractals/__init__.py"]
+[tool.poetry_bumpversion.file."tests/test_fractals.py"]

@@ -1,0 +1,24 @@
+{
+    "name": "Python 3",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "ms-python.flake8",
+                "ms-python.pylint",
+                "ms-python.mypy"
+            ],
+            "settings": {
+                "python.analysis.autoSearchPaths": true,
+                "python.notebook.notebookFileRoot": "${workspaceFolder}"
+            }
+        }
+    },
+    "appPort": 8080,
+    "postCreateCommand": "sh .devcontainer/post-create.sh"
+}
